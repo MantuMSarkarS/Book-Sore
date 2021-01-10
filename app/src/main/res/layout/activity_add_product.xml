@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.example.bookstore.activities.AddProductActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_name"
+            android:layout_marginTop="20dp"
+            style="@style/AddProductTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            android:hint="Product Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_name1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_description"
+            style="@style/AddProductTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            android:hint="Product Description">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/product_description1"
+                android:gravity="start|top"
+                android:maxLength="100"
+                android:maxLines="10"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_quantity"
+            style="@style/AddProductTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="4"
+            android:hint="Quantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_quantity1"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_price"
+            style="@style/AddProductTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="5"
+            android:hint="Price">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_price1"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AddProductTextInputLayoutStyle"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            android:hint="Mobile Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
+                android:id="@+id/mobile_no"
+                android:maxLength="10"
+                android:text="8144917808"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_product"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/button_color"
+            android:text="Save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_a_product">Add a Product</string>
+    <string name="book">Books</string>
+    <string name="sync_product">Sync Products</string>
+    <string name="addandload_title">Add &amp; Sync Product</string>
+    <string name="product_list">Books</string>
+</resources>
